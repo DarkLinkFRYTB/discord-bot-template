@@ -1,0 +1,34 @@
+[
+    {
+        "name": "Help",
+        "description": "Send you a list of commands available for you",
+        "uses": [
+            "help",
+            "h"
+        ],
+        "helpMenuUses": [
+            "help",
+            "h"
+        ],
+        "available": true,
+        "roles": null,
+        "canUse": null,
+        "path": "./commands/general/help.js"
+    },
+    {
+        "name": "Demonstration",
+        "description": "Send a message. It's for demonstration",
+        "uses": [
+            "demonstration",
+            "demo"
+        ],
+        "helpMenuUses": [
+            "demonstration [@mention#1234]",
+            "demo [@mention#1234]"
+        ],
+        "available": null,
+        "roles": null,
+        "canUse": ["Any role id"],
+        "path": "./commands/general/demonstration.js"
+    }
+]

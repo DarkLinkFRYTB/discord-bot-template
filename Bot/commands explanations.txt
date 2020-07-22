@@ -1,0 +1,19 @@
+All commands must be look like that
+All after // = comments
+
+{
+    "name": "Demonstration", //The name of command
+    "description": "Send a message. It's for demonstration", //The description of command
+    "uses": [ //An array with the command uses. The user text must be look like an element of this array
+        "demonstration",
+        "demo"
+    ],
+    "helpMenuUses": [ //An array with the command uses for the help menu, so it's not expectly the user text
+        "demonstration [@mention#1234]",
+        "demo [@mention#1234]"
+    ],
+    "available": null, //Available has 3 values : false (nobody can use that), null (command in test) and true (command is available)
+    "roles": null, //The roles id array who can run the command (if it's null and available is true, everyone can)
+    "canUse": ["Any role id"], //The roles id array who can run the command when it's in test (available === null). If null, nobody can
+    "path": "./commands/general/demonstration.js" //The path to the command's file. The first dot is the Client.js file directory
+}

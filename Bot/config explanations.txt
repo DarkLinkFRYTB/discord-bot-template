@@ -1,0 +1,5 @@
+All after // = comments 
+{
+    "mainGuilds": [], //The principal guild(s) of client (not all) array
+    "owners": [] //The owner(s) of the bot array
+}
